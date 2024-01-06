@@ -84,7 +84,7 @@
             <p>New user? <a href="login.jsp">Sign up here</a></p>
         </div>
 
-    </form>
+    </form>   
 </body>
 </html>
     
