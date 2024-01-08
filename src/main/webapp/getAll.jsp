@@ -56,17 +56,7 @@
 </head>
 <body>
     <form action="getAll" >
-        <label for="studentName">Student Name:</label>
-        <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
-
-        <label for="course">Course:</label>
-        <input type="text" id="course" name="course" placeholder="Enter course" required>
-
-        <label for="gender">Gender:</label>
-        <input type="text" id="gender" name="gender" placeholder="Enter gender" required>
-
-        <input type="submit" value="Update">
-        <input type="submit" value="Delete">
+    
         <input type="submit" value="Get All">
     </form>
 </body>

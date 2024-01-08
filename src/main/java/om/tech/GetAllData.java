@@ -16,6 +16,8 @@ import org.hibernate.cfg.Configuration;
 
 import com.Hibernate.Student;
 
+import UtilityPackage.UtilityClass;
+
 
 public class GetAllData  extends HttpServlet{
 	
@@ -25,23 +27,21 @@ public class GetAllData  extends HttpServlet{
 		
 		
 	
-		Configuration cfg = new Configuration();
-		cfg.configure("Hb.xml");
-
-		SessionFactory sf = cfg.buildSessionFactory();
-		Session session = sf.openSession();
+		Session session=UtilityClass.hbConfig();
+		
+		
 		
 		Criteria cr=session.createCriteria(Student.class);
-		
 		List <Student> std= cr.list();
 		
 		
 	
 		
-		System.out.println(std);
+		System.out.println("Swapnil here is Lis = "+std);
 		
 		
 		RequestDispatcher rd= req.getRequestDispatcher("AllStudentData.jsp");
+		req.setAttribute("GET_LIST_STUDENT", std);
 	rd.forward(req, res);
 	}
 

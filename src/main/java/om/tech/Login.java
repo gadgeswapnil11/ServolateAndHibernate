@@ -58,15 +58,15 @@ public class Login extends HttpServlet {
 
 			
 			System.out.println("user not present");
-			RequestDispatcher rd=req.getRequestDispatcher("getAll.jsp");
+			RequestDispatcher rd=req.getRequestDispatcher("Message.jsp");
+
 			req.setAttribute("Message", "Not Able To Login");
 			rd.forward(req, resp);
 		}else 
 		{
 			// user  present
 			System.out.println("user  present");
-			
-		RequestDispatcher rd=req.getRequestDispatcher("Message.jsp");
+		RequestDispatcher rd=req.getRequestDispatcher("getAll.jsp");
 		req.setAttribute("Message", "Finally Login here");
 
 		rd.forward(req, resp);

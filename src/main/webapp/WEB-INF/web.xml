@@ -51,4 +51,15 @@
 		<url-pattern>/getAll</url-pattern>
 	</servlet-mapping> 
 
+
+<servlet>
+		<servlet-name>Delete</servlet-name>
+		<servlet-class>om.tech.DeleteStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Delete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping> 
+
+
 </web-app>
