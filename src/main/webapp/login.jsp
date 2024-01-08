@@ -81,10 +81,10 @@
         </div>
         <div class="login-body">
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="uname" required>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="pass" required>
 
             <button type="submit">Login</button>
 

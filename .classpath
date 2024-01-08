@@ -33,5 +33,6 @@
 	<classpathentry kind="lib" path="C:/Users/hp/Downloads/Softwares/HibernateJar/jboss-logging-3.4.2.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Users/hp/Downloads/Softwares/HibernateJar/mysql-connector-j-8.2.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/hp/Downloads/Softwares/servlet-api.jar/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/hp/Downloads/Softwares/jstl-1.2.jar/jstl-1.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

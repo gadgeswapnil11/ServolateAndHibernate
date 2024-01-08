@@ -82,7 +82,7 @@
 
         <div class="signup-link">
             <p>New user? <a href="login.jsp">Sign up here</a></p>
-        </div>
+        </div>    
 
     </form>   
 </body>

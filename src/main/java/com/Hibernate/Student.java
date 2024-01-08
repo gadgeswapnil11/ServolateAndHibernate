@@ -11,6 +11,12 @@ import javax.persistence.Table;
 
 public class Student {
 
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", email=" + email + ", course=" + course + ", mobile=" + mobile
+				+ ", gender=" + gender + "]";
+	}
+
 	@Id
 	@GeneratedValue
 	@Column

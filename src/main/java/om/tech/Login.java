@@ -22,8 +22,15 @@ public class Login extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		String user = req.getParameter("username");
-		String pass = req.getParameter("password");
+		System.out.println("Inside The Login service method");
+		String user = req.getParameter("uname");
+		String pass = req.getParameter("pass");
+	
+		
+		
+		System.out.println("Parameter from LoginPage");
+	
+		
 		System.out.println(user + "  " + pass);
 
 		Configuration cfg = new Configuration();
@@ -44,15 +51,17 @@ public class Login extends HttpServlet {
 
 		User us=(User)criteria.uniqueResult();
 		
+		System.out.println(us);
+ 		
 		if(us ==null)
 		{
 
 			
 			System.out.println("user not present");
-			RequestDispatcher rd=req.getRequestDispatcher("Message.jsp");
+			RequestDispatcher rd=req.getRequestDispatcher("getAll.jsp");
 			req.setAttribute("Message", "Not Able To Login");
 			rd.forward(req, resp);
-		}else
+		}else 
 		{
 			// user  present
 			System.out.println("user  present");
